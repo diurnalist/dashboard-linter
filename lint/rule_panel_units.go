@@ -92,7 +92,9 @@ func getConfiguredUnit(p Panel) string {
 		for _, p := range p.FieldConfig.Overrides {
 			for _, o := range p.OverrideProperties {
 				if o.Id == "unit" {
-					configuredUnit = o.Value
+					if unitStr, ok := o.Value.(string); ok {
+						configuredUnit = unitStr
+					}
 				}
 			}
 		}
