@@ -7,9 +7,9 @@ import (
 	"path"
 	"strings"
 
+	"github.com/diurnalist/conflate"
 	"github.com/spf13/cobra"
 	"github.com/spf13/viper"
-	"github.com/zeitlinger/conflate"
 
 	"github.com/grafana/dashboard-linter/lint"
 )
