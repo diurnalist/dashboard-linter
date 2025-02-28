@@ -134,6 +134,7 @@ type Input struct {
 	Label    string `json:"label"`
 	Type     string `json:"type"`
 	PluginID string `json:"pluginId"`
+	Value    string `json:"value,omitempty"`
 }
 
 type Datasource struct {
